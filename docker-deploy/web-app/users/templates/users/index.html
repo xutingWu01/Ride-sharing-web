@@ -1,4 +1,5 @@
 {% extends 'users/base.html' %}
+{% load socialaccount %}
 {% block content %}
 <div class = "content-section">
   <ul>
@@ -9,5 +10,6 @@
   <li><a href="/addCar">Apply for a driver</a></li> 
   <li><a href="/profile/">My info</a></li> 
   <li><a href="/logout/">Logout</a></li>
+  <li><a href="{% provider_login_url 'github' %}">Log in with GitHub account</a></li>
   </ul>
 {% endblock %}

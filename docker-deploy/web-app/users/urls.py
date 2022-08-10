@@ -1,7 +1,7 @@
-from django.urls import path
+from django.urls import path, include
 
 from . import views
-
+from django.contrib import admin
 
 urlpatterns = [
     # ex: /users/1,2
@@ -9,5 +9,5 @@ urlpatterns = [
     path('<int:request_id>/', views.rideDetail, name='rideDetail'),
     path('<int:request_id>/edit_destination/', views.edit_destination, name='edit_destination'),
     path('<int:request_id>/edit_time/', views.edit_time, name='edit_time'),
-    path('<int:request_id>/edit_num_passanger/', views.edit_num_passanger, name='edit_num_passanger')
+    path('<int:request_id>/edit_num_passanger/', views.edit_num_passanger, name='edit_num_passanger'),
 ]

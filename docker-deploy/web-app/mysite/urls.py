@@ -34,4 +34,7 @@ urlpatterns = [
     path('profile_edit/',user_views.profile_edit,name = 'edit-profile'),
     path('search/',user_views.search,name = 'search-ride'),
     path('join/<int:request_id>/',user_views.join,name = 'join-ride'),
+
+    path('accounts/', include('allauth.urls')),
+    path('admin/', admin.site.urls),
 ]

@@ -10,6 +10,9 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.db.models import Q
 from django.contrib.auth.hashers import make_password,check_password
+from django.views.generic import TemplateView
+
+
 # Create your views here.
 def driver1(request,id1):
    # print(kk.status)
