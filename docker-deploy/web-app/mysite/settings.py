@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-y=82iyqt^$=gq572(+2cu5k&e^p+abq23&ha4@8pe2_jn^w$&8
 DEBUG = True
 
 #ALLOWED_HOSTS = ['vcm-24568.vm.duke.edu','127.0.0.1']
-ALLOWED_HOSTS = ['web','vcm-24513.vm.duke.edu','127.0.0.1']
+#ALLOWED_HOSTS = ['web','vcm-24513.vm.duke.edu','127.0.0.1']
+ALLOWED_HOSTS = ['web','vcm-25297.vm.duke.edu','127.0.0.1']
 
 # Application definition
 
@@ -98,7 +99,8 @@ DATABASES = {
     }
 }
 
-CSRF_TRUSTED_ORIGINS = ['http://*.vcm-24513.vm.duke.edu:8000','http://*.127.0.0.1:8000']
+#CSRF_TRUSTED_ORIGINS = ['http://*.vcm-24513.vm.duke.edu:8000','http://*.127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['http://*.vcm-25297.vm.duke.edu:8000','http://*.127.0.0.1:8000']
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
